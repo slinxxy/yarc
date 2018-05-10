@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1199">
-	
+
+
 	<controls>
 	   <include>CommonBackground</include>
 	   <include>HomeButtonCommons</include>
+
 
 		<control type="group">
 			<posx>0</posx>
@@ -29,7 +31,7 @@
 				<width>811</width>
 				<height>50</height>
 				<font>font70_bold</font>
-				<label>#49 4142 812183</label>
+				<label></label>
 				<textcolor>selected</textcolor>
 				<disabledcolor>grey2</disabledcolor>
 				<align>center</align>
@@ -73,28 +75,90 @@
 				<aligny>center</aligny>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
+
 			<control type="group">
 				<posx>0</posx>
 				<posy>10</posy>
-				<control type="button" id="11">
-					<description>1 button</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>161</width>
-					<height>100</height>
-					<font>font30</font>
-					<align>center</align>
-					<aligny>center</aligny>
-					<texturenofocus border="8">KeyboardKeyDark.png</texturenofocus>
-					<texturefocus border="8">KeyboardKey.png</texturefocus>
-					<label>12311</label>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-					<onleft>23</onleft>
-					<onright>12</onright>
-					<onup>20</onup>
-					<ondown>14</ondown>
-				</control>
+
+				<include content="T_NumericButton">
+					<param name="id" value="11"/>
+					<param name="posx">0</param>
+					<param name="posy">0</param>
+					<param name="label">12311</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="12"/>
+					<param name="posx">166</param>
+					<param name="posy">0</param>
+					<param name="label">12312</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="13"/>
+					<param name="posx">332</param>
+					<param name="posy">0</param>
+					<param name="label">12313</param>
+				</include>
+
+				<include content="T_NumericButton">
+					<param name="id" value="14"/>
+					<param name="posx">0</param>
+					<param name="posy">105</param>
+					<param name="label">12314</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="15"/>
+					<param name="posx">166</param>
+					<param name="posy">105</param>
+					<param name="label">12315</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="16"/>
+					<param name="posx">332</param>
+					<param name="posy">105</param>
+					<param name="label">12316</param>
+				</include>
+
+				<include content="T_NumericButton">
+					<param name="id" value="17"/>
+					<param name="posx">0</param>
+					<param name="posy">210</param>
+					<param name="label">12317</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="18"/>
+					<param name="posx">166</param>
+					<param name="posy">210</param>
+					<param name="label">12318</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="19"/>
+					<param name="posx">332</param>
+					<param name="posy">210</param>
+					<param name="label">12319</param>
+				</include>
+
+				<include content="T_NumericButton">
+					<param name="id" value="20"/>
+					<param name="posx">0</param>
+					<param name="posy">315</param>
+					<param name="label">#</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="10"/>
+					<param name="posx">166</param>
+					<param name="posy">315</param>
+					<param name="label">12310</param>
+				</include>
+				<include content="T_NumericButton">
+					<param name="id" value="22"/>
+					<param name="posx">332</param>
+					<param name="posy">315</param>
+					<param name="label">*</param>
+				</include>
+
+
+
+				<!--
 				<control type="button" id="12">
 					<description>2 button</description>
 					<posx>166</posx>
@@ -114,6 +178,8 @@
 					<onup>10</onup>
 					<ondown>15</ondown>
 				</control>
+
+
 				<control type="button" id="13">
 					<description>3 button</description>
 					<posx>332</posx>
@@ -191,6 +257,7 @@
 					<onup>13</onup>
 					<ondown>19</ondown>
 				</control>
+
 				<control type="button" id="17">
 					<description>7 button</description>
 					<posx>0</posx>
@@ -248,7 +315,7 @@
 					<onup>16</onup>
 					<ondown>22</ondown>
 				</control>
-				
+
 				<control type="button" id="20">
 					<description>* button</description>
 					<posx>0</posx>
@@ -267,6 +334,8 @@
 					<onup>17</onup>
 					<ondown>11</ondown>
 				</control>
+
+
 				<control type="button" id="10">
 					<description>0 button</description>
 					<posx>166</posx>
@@ -286,6 +355,16 @@
 					<onup>18</onup>
 					<ondown>12</ondown>
 				</control>
+-->
+				<!--
+			<include content="T_NumericButton">
+    			<param name="id" value="10"/>
+    			<param name="posx">166</param>
+				<param name="posy">315</param>
+				<param name="label">12310</param>
+			</include>
+			-->
+<!--
 				<control type="button" id="22">
 					<description># button</description>
 					<posx>332</posx>
@@ -305,7 +384,7 @@
 					<onup>19</onup>
 					<ondown>13</ondown>
 				</control>
-
+-->
 				<control type="button" id="23">
 					<description>phone button</description>
 					<posx>538</posx>
@@ -363,23 +442,9 @@
 					<height>80</height>
 					<texture>icon_backspace.png</texture>
 				</control>				
-				<!--
-				<control type="image">
-					<description>contact image</description>
-					<posx>770</posx>
-					<posy>85</posy>
-					<width>245</width>
-					<height>245</height>
-					<texture>defaultactor.png</texture>
-				</control>				
-				-->
-							
-				
+
 			</control>
 		</control>
 
-
-
-		
 	</controls>
 </window>
